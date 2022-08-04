@@ -32,16 +32,16 @@ public class MainApp {
 
       for (User user : userService.listUsers()) {
          System.out.println(user + " " + user.getCar());
-         System.out.println("1. _____________________________________________");
+//         System.out.println("1. _____________________________________________");
       }
-
+      System.out.println("1. _____________________________________________");
 
       System.out.println(userService.getUserByCar("Toyota", 1001));
       System.out.println("2. _____________________________________________");
 
 
       try {
-         User notFoundUser = userService.getUserByCar("Broom", 90);
+         User notFoundUser = userService.getUserByCar("BMW", 90);
       } catch (NoResultException e) {
          System.out.println("User not found");
          System.out.println("3. _____________________________________________");
